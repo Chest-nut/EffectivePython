@@ -35,8 +35,26 @@ class WeatherIterable(object):
         return WeatherIterator(self.cities)
 
 
+class PrimeNumbers(object):
+    """使用生成器打印[start, end]区间的素数"""
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
 
-if __name__ == '__main__':
+    def is_prime_num(self, num):
+        if num < 4:
+            return False
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+        return True
+
+    def __iter__(self):
+        for k in range(self.start, self.end+1):
+            if self.is_prime_num(k):
+                yield k
+
+def test1():
     print(weather_data, '\n')
 
     print('迭代器:不可重复迭代')
@@ -55,4 +73,13 @@ if __name__ == '__main__':
         print(i)
     print('第二次迭代:')
     for i in w:
+        print(i)
+
+
+if __name__ == '__main__':
+    # test1()
+    g = PrimeNumbers(1, 10)
+    for i in g:
+        print(i)
+    for i in g:
         print(i)
