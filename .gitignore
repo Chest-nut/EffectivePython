@@ -4,6 +4,8 @@ images/
 img/
 media/
 .json
+demo.wav
+new_demo.wav
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
