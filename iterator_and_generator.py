@@ -36,7 +36,7 @@ class WeatherIterable(object):
 
 
 class PrimeNumbers(object):
-    """使用生成器打印[start, end]区间的素数"""
+    """使用生成器返回[start, end]区间的素数"""
     def __init__(self, start, end):
         self.start = start
         self.end = end

@@ -3,9 +3,12 @@
 images/
 img/
 media/
-.json
-demo.wav
-new_demo.wav
+*.json
+*.wav
+*.xlsx
+*.csv
+!test.csv
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
