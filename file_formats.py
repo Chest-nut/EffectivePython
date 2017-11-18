@@ -1,5 +1,5 @@
 import csv
-
+from xml.etree.ElementTree import Element, ElementTree
 
 def csv_demo():
     with open('test.csv', 'r') as f:
@@ -13,6 +13,21 @@ def csv_demo():
                     writer.writerow(line)
     print('end')
 
+def xml_demo():
+    with open('test.csv', 'r') as f:
+        reader = csv.reader(f)
+        headers = reader.__next__()
+        root = Element('Data')
+        for row in reader:
+            erow = Element('Row')
+            root.append(erow)
+            for tag, text in zip(headers, row):
+                e = Element(tag)
+                e.text = text
+                erow.append(e)
+    et = ElementTree(root)
+    et.write('test.xml')
+
 
 if __name__ == '__main__':
-    csv_demo()
+    xml_demo()

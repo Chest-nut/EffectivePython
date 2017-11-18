@@ -8,6 +8,7 @@ media/
 *.xlsx
 *.csv
 !test.csv
+test.xml
 
 
 # Byte-compiled / optimized / DLL files
