@@ -1,3 +1,5 @@
+"""操作二进制文件(音频文件)"""
+
 from array import array
 
 class OperateWav(object):

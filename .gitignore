@@ -5,7 +5,6 @@ img/
 media/
 *.json
 *.wav
-*.xlsx
 *.csv
 !test.csv
 test.xml

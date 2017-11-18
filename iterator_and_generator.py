@@ -1,11 +1,13 @@
+"""迭代器、生成器demo"""
+
+from collections import Iterable, Iterator
+
+
 weather_data = {'广州': '25-30°C', '梅州': '20-25°C',
                 '深圳': '15-20°C', '北京': '5-10°C', }
 
-from collections import Iterable, Iterator
-from copy import deepcopy
 
-
-class WeatherIterator(object):
+class WeatherIterator(Iterator):
     """迭代器:不可重复迭代"""
     def __init__(self, cities):
         self.cities = cities
@@ -22,11 +24,8 @@ class WeatherIterator(object):
         self.index += 1
         return weather
 
-    def __iter__(self):
-        return self
 
-
-class WeatherIterable(object):
+class WeatherIterable(Iterable):
     """可迭代对象:可重复迭代"""
     def __init__(self, cities):
         self.cities = cities
