@@ -1,8 +1,9 @@
 import csv
 from random import randint
 
-from thread_process.chinese_char import surname as sname
-from thread_process.chinese_char import cn_chars
+from file_format.chinese_char import cn_chars
+from file_format.chinese_char import surname as sname
+
 
 def random_char():#4E00-9FA5
     # # gb2312编码
@@ -19,7 +20,7 @@ def generate_fullname():
     l = len(sname) - 1
     surname = sname[randint(0, l)]
     # 名
-    flag = randint(1,1)
+    flag = randint(0,1)
     if flag:
         firstname = random_char() + random_char()
     else:
@@ -42,7 +43,7 @@ def generate_csv(filename, nrow=1):
 
 if __name__ == '__main__':
     for i in range(10):
-        generate_csv('scores/score%s.csv'%i, 20)
+        generate_csv('scores/score%s.csv'%i, 2000)
     # for i in range(10):
     #     print(random_char())
     pass

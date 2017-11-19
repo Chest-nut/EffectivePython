@@ -17,8 +17,8 @@ def csv_demo():
                     writer.writerow(line)
     print('end')
 
-def xml_demo():
-    with open('test.csv', 'r') as f:
+def xml_demo(fileid):
+    with open('scores/score%s.csv'%fileid, 'r') as f:
         reader = csv.reader(f)
         headers = reader.__next__()
         root = Element('Data')
@@ -30,7 +30,8 @@ def xml_demo():
                 e.text = text
                 erow.append(e)
     et = ElementTree(root)
-    et.write('test.xml')
+    et.write('scores/score%s.xml'%fileid, encoding='utf-8')
+
 
 def excel_demo():
     # 向原表中添加总分字段
@@ -53,4 +54,4 @@ def excel_demo():
     wbook.save('new_demo.xls')  # xlwt模块生成的文件后缀为xls，不能用xlsx
 
 if __name__ == '__main__':
-    excel_demo()
+    xml_demo(0)

@@ -1,23 +1,40 @@
-import csv
+import json
 from xml.etree.ElementTree import Element, ElementTree
 
 
-def xml_demo(filename):
-    with open(filename, 'r') as f:
-        reader = csv.reader(f)
-        headers = reader.__next__()
+import requests
+
+def handle(lottery_type, index):
+    print('Download %s'%index)
+    url = 'http://f.apiplus.net/%s.json'%lottery_type
+    response = requests.get(url)
+    res = json.loads(response.content)
+    with open('jsons/%s.json'%lottery_type, 'w') as f:
+        json.dump(res, f, separators=[',',':'])
+
+    print('Convert %s'%index)
+    with open('jsons/%s.json'%lottery_type, 'r') as f:
+        res = json.load(f)
+        data = res['data']
+        head = ['expect', 'opencode', 'opentime', 'opentimestamp']
         root = Element('Data')
-        for row in reader:
+        for row in data:
             erow = Element('Row')
             root.append(erow)
-            for tag, text in zip(headers, row):
-                e = Element(tag)
-                e.text = text
+            for key, value in row.items():
+                e = Element(key)
+                e.text = str(value)
                 erow.append(e)
-    et = ElementTree(root)
-    et.write(filename.replace('csv', 'xml'), encoding='utf-8')
+        et = ElementTree(root)
+        et.write('jsons/%s.xml'%lottery_type)
 
 
 if __name__ == '__main__':
-    xml_demo('scores/score1.csv')
+    lottery_type = {0: 'dlt-20', 1: 'fc3d-20', 2: 'pl3-20',
+                    3: 'pl5-20', 4: 'qcl-20', 5: 'qxc-20',
+                    6: 'ssq-20', 7: 'cqssc-20', 8: 'gd11x5-20',
+                    9: 'bj11x5-20'}
+
+    for i in range(10):
+        handle(lottery_type[i], i)
     pass

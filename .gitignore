@@ -7,7 +7,7 @@ media/
 *.wav
 *.csv
 !test.csv
-test.xml
+*.xml
 
 
 # Byte-compiled / optimized / DLL files
