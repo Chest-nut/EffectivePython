@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718296bb-d085-40eb-94a4-13c050943843" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thread_process/multi_thread.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/thread_process/main.py" afterPath="$PROJECT_DIR$/thread_process/single_thread.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thread_process/multi_thread.py" afterPath="$PROJECT_DIR$/thread_process/multi_thread.py" />
     </list>
     <ignored path="EffectivePython.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +20,7 @@
     <SUITE FILE_PATH="coverage/EffectivePython$generate_scores.coverage" NAME="generate_scores Coverage Results" MODIFIED="1511095395072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thread_process" />
     <SUITE FILE_PATH="coverage/EffectivePython$iteriter.coverage" NAME="iteriter Coverage Results" MODIFIED="1510835671523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EffectivePython$process_thread__1_.coverage" NAME="process_thread (1) Coverage Results" MODIFIED="1511076009970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/process_thread" />
-    <SUITE FILE_PATH="coverage/EffectivePython$multi_thread.coverage" NAME="multi_thread Coverage Results" MODIFIED="1511157963896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thread_process" />
+    <SUITE FILE_PATH="coverage/EffectivePython$multi_thread.coverage" NAME="multi_thread Coverage Results" MODIFIED="1511170260533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thread_process" />
     <SUITE FILE_PATH="coverage/EffectivePython$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1511105127910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thread_process" />
     <SUITE FILE_PATH="coverage/EffectivePython$main.coverage" NAME="main Coverage Results" MODIFIED="1511081416353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thread_process" />
     <SUITE FILE_PATH="coverage/EffectivePython$generate_scores__2_.coverage" NAME="generate_scores (2) Coverage Results" MODIFIED="1511101690279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/file_format" />
@@ -41,60 +39,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="single_thread.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thread_process/single_thread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="multi_thread.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thread_process/multi_thread.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.3486238">
-              <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5882353">
+              <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_formats.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file_format/file_formats.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding>
-                <element signature="e#25#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_scores.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file_format/generate_scores.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -246,13 +198,14 @@
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\git-repository\EffectivePython" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\git-repository\EffectivePython\thread_process" />
       <recent name="D:\Git\git-repository\EffectivePython\file_format" />
       <recent name="D:\Git\git-repository\EffectivePython\file_formats" />
       <recent name="D:\Git\git-repository\EffectivePython\process_thread" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Git\git-repository\EffectivePython" />
     </key>
   </component>
   <component name="RunManager" selected="Python.multi_thread">
@@ -570,7 +523,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30937973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -638,33 +591,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="55" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iterator_and_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/virtual-env/effectivepython/Lib/_collections_abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-1112550447/_pickle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -954,17 +885,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file_format/generate_scores.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.61946905">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.49557522">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding />
         </state>
@@ -980,10 +911,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file_format/file_formats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-2.2920353">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
-            <element signature="e#25#35#0" expanded="true" />
+            <element signature="e#25#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1006,10 +937,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python/Python36/Lib/tarfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="1468" column="13" selection-start-line="1468" selection-start-column="13" selection-end-line="1468" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/virtual-env/effectivepython/Lib/tarfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.666666">
+          <caret line="1719" column="13" selection-start-line="1719" selection-start-column="4" selection-end-line="1719" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python36/Lib/pathlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="969" column="6" selection-start-line="969" selection-start-column="6" selection-end-line="969" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/virtual-env/effectivepython/Lib/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35103244">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thread_process/multi_thread.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3486238">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5882353">
+          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

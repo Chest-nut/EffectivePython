@@ -1,6 +1,9 @@
 from io import StringIO
 import json
+import os
+from pathlib import Path
 from queue import Queue
+import tarfile
 from threading import Thread
 from xml.etree.ElementTree import Element, ElementTree
 
@@ -69,6 +72,19 @@ class ConvertToXmlThread(Thread):
             if res:
                 self.json_to_xml(res, index)
 
+def tarXML(filename):
+    filename = './jsons/'+filename
+    tf = tarfile.open(filename, 'w:gz')
+    for fname in os.listdir('./jsons'):
+        if fname.endswith('.xml'):
+            fname = str(Path(__file__).parent/'jsons'/fname)
+            tf.add(fname)
+            os.remove(str(fname))
+    tf.close()
+
+    if not tf.members:
+        os.remove(filename)
+
 
 if __name__ == '__main__':
     threads = []
@@ -99,3 +115,5 @@ if __name__ == '__main__':
     cthread.join()
 
     print('main thread end')
+
+    tarXML('xml10.tgz')
